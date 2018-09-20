@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ブロック崩し</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BlockKuzushi.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <h1>ブロック崩し</h1>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 800px; height: 600px"></div>
+    </div>
+    <h2>遊び方</h2>
+    <p>ごくごく普通のブロック崩しです。</p>
+    <p>使用するのはマウスのみです。</p>
+    <p>ボールが当たるラケットの位置によってボールの跳ね返る角度が変わります。ラケットの左側に当たれば左方向に、右側に当たれば右方向にボールが行きます。</p>
+    <p>このゲームはUnityのWebGLの練習用として開発されました。ステージは1つしかありません。</p>
+    <p>音は鳴りません。</p>
+  </body>
+</html>
